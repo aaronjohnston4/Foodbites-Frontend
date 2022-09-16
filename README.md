@@ -1,5 +1,5 @@
-# PROJECT 3! **Browser-based Game**
-# MEMORIA
+# PROJECT 3 **React Frontend**
+# FOODBITES
 
 ## **Overview**
 ## Description
