@@ -1,3 +1,4 @@
+import {useParams, Link, useNavigate} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 
@@ -24,17 +25,20 @@ function Recipes(props) {
 
     console.log(`There are ${recipes.length} recipes available to render`)
 
-    const loaded = () => {
-        return recipes?.map((recipe) => {
-          return (
-            <div key={recipe._id}>
-              <h1>{recipe.name}</h1>
-              <img src={recipe.image} />
-              {/* <h3>{recipe.instructions}</h3> */}
-            </div>
-          );
-        });
-      };
+	const loaded = () => {
+        return recipes.map(recipe => (
+                <div key={recipe._id} className='recipe-card'>
+									{/* update your JSX to include a Link component */}
+                   <Link to={`/recipes/${recipe._id}`}>
+                       <h1>{recipe.name}</h1>
+                       <img src={recipe.image} alt={recipe.name} />
+                       <h3>{recipe.instructions}</h3>
+                   </Link>
+               </div>
+           )
+       )
+   }
+
     
       const loading = () => (
         <section className="recipe-list">
