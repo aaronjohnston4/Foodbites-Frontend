@@ -5,10 +5,10 @@ const Navigation = (props) => {
         <nav className="nav">
             <Link to="/">
                 <img
-                    src="https://i.imgur.com/fRu07YF.png"
+                    alt="plate of pasta" src="https://i.imgur.com/fRu07YF.png"
                 />
             </Link>
-            <div>FOODBITES</div>
+            <Link to="/">FOODBITES</Link>
         </nav>
     )
 }

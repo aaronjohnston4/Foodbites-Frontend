@@ -15,3 +15,6 @@ Rerverse engineered a site similar to Budgetbytes. This is a good food friendly 
  <img width="400" alt="Show Page" src="https://i.imgur.com/KGUSWz1.png">
  <img width="400" alt="Edit Page" src="https://i.imgur.com/gkUZ0v2.png">
 
+Step 2. ERD
+
+<img width="400" alt="Edit Page" src="https://i.imgur.com/qP3LHJk.png">
