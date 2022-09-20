@@ -9,6 +9,7 @@ const Navigation = (props) => {
                 />
             </Link>
             <Link to="/">FOODBITES</Link>
+            <Link to="/post">POST</Link>
         </nav>
     )
 }
