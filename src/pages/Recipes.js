@@ -32,7 +32,7 @@ function Recipes(props) {
                    <Link to={`/recipes/${recipe._id}`}>
                        <h1>{recipe.name}</h1>
                        <img src={recipe.image} alt={recipe.name} />
-                       <h3>{recipe.instructions}</h3>
+                       <p>{recipe.instructions}</p>
                    </Link>
                </div>
            )
