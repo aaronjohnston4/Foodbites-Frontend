@@ -37,7 +37,7 @@ const Show = () => {
             <img src={recipe.image} alt={recipe.name + " image"} />
             <div>
                 <button className="delete" onClick={removeRecipe}>
-                    Remove Person
+                    Remove Recipe
                 </button>
             </div>
             <div>

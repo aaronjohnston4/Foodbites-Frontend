@@ -32,7 +32,7 @@ function Recipes(props) {
                    <Link to={`/recipes/${recipe._id}`}>
                        <h1>{recipe.name}</h1>
                        <img src={recipe.image} alt={recipe.name} />
-                       <p>{recipe.instructions}</p>
+                       {/* <p>{recipe.instructions}</p> */}
                    </Link>
                </div>
            )
@@ -55,7 +55,9 @@ function Recipes(props) {
       );
         
           return (
+            <div className='recipe-list-wrapper'>
             <section className="recipe-list">{recipes && recipes.length ? loaded() : loading()}</section>
+            </div>
           );
         }
 
