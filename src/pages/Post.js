@@ -1,13 +1,12 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import Recipes from './Recipes';
+// import { useParams, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/";
 
 const Post = (props) => {
 
-  const [recipe, setRecipe] = useState(null)
-  const { id } = useParams()
-  const navigate = useNavigate()
+  // const [recipe, setRecipe] = useState(null)
+  // const { id } = useParams()
+  // const navigate = useNavigate()
 
 
   const [newForm, setNewForm] = useState({

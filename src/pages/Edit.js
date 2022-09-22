@@ -1,6 +1,5 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Recipes from './Recipes';
 const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/";
 
 
