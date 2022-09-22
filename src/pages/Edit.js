@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/";
 
@@ -7,8 +7,7 @@ const Edit = (props) => {
 
   
   const { id } = useParams()
-  // const navigate = useNavigate()
-  const [recipe, setRecipe] = useState(null)
+  const navigate = useNavigate()
   const [editForm, setEditForm] = useState({
     name:"",
     instructions:"",
@@ -16,23 +15,6 @@ const Edit = (props) => {
   })
   const URL = `${BASE_URL}recipes/${id}/edit`
 
-  const getRecipe = async () => {
-    console.log("hello this is a test")
-
-    try {
-      const response = await fetch(`${BASE_URL}recipes/${id}`)
-      const result = await response.json()
-      console.log("hello", result)
-      setEditForm(result)
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
-
-  // useEffect(() => {
-  //   getRecipe()
-  // }, [])
 
   const updateRecipe = async (e) => {
     e.preventDefault()
@@ -50,7 +32,7 @@ const Edit = (props) => {
       const newUpdateRecipe = await response.json()
       console.log(newUpdateRecipe)
       setEditForm(newUpdateRecipe)
-      setRecipe(newUpdateRecipe)
+      navigate(`/recipes/${id}`)
     } catch (err) {
       console.log(err)
     }
@@ -61,9 +43,20 @@ const Edit = (props) => {
   }
 
   useEffect(() => {
+    const getRecipe = async () => {
+      console.log("hello this is a test")
+  
+      try {
+        const response = await fetch(`${BASE_URL}recipes/${id}`)
+        const result = await response.json()
+        console.log("hello", result)
+        setEditForm(result)
+      } catch (err) {
+        console.log(err)
+      }
+    }
     getRecipe()
-    updateRecipe()
-  }, [])
+  }, [id])
 
   return (
     <section>

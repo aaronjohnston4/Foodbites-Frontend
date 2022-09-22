@@ -1,4 +1,5 @@
-import {useParams, Link, useNavigate} from 'react-router-dom'
+// import {useParams, Link, useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 
@@ -47,7 +48,7 @@ function Recipes(props) {
             <span>
               <img
                 className="spinner"
-                src="https://freesvg.org/img/1544764567.png"
+                alt='loading spinner icon' src="https://freesvg.org/img/1544764567.png"
               />{" "}
             </span>
           </h1>

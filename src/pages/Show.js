@@ -8,21 +8,22 @@ const Show = () => {
     const URL = `http://localhost:4000/recipes/${id}`
     const navigate = useNavigate()
 
-    const getRecipe = async () => {
-        try {
-            const response = await fetch(URL)
-            const result = await response.json()
-            setRecipe(result)
-        } catch (err) {
-            console.log(err)
-        }
-    }
+
 
     console.log(`Current Recipe: ${JSON.stringify(recipe)}`)
 
     useEffect(() => {
+        const getRecipe = async () => {
+            try {
+                const response = await fetch(URL)
+                const result = await response.json()
+                setRecipe(result)
+            } catch (err) {
+                console.log(err)
+            }
+        }
         getRecipe()
-    }, [])
+    }, [URL])
 
 
 
@@ -59,7 +60,7 @@ const Show = () => {
 
             const response = await fetch(URL, options)
 
-            const deletedRecipe = await response.json()
+            await response.json()
 
             navigate('/')
 

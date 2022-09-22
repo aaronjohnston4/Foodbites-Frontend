@@ -1,4 +1,4 @@
-// import { useParams, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/";
 
@@ -6,7 +6,7 @@ const Post = (props) => {
 
   // const [recipe, setRecipe] = useState(null)
   // const { id } = useParams()
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
 
   const [newForm, setNewForm] = useState({
@@ -18,10 +18,11 @@ const Post = (props) => {
   const handleSubmit = async (e) => {
 
     e.preventDefault()
-    const newRecipe = await createRecipes(newForm)
+    await createRecipes(newForm)
 
     // reset the form
     setNewForm({ name: "", instructions: "", image: "" })
+    navigate("/")
   }
 
 
@@ -32,7 +33,7 @@ const Post = (props) => {
 
   const createRecipes = async (recipeData) => {
     try {
-      const newRecipe = await fetch(BASE_URL + "recipes", {
+      await fetch(BASE_URL + "recipes", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
