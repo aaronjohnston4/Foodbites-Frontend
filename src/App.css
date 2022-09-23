@@ -16,6 +16,11 @@
 
 .nav img {width: 45px; height: auto;}
 
+.header {
+  width: 100%;
+  filter: brightness(90%);
+}
+
 .recipe-list-wrapper{
   display: flex;
   justify-content: center;
@@ -50,6 +55,15 @@ animation: loading infinite 3s linear;
 
 .recipe-card > a > img {
   max-width: 300px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-radius: 10px;
+  max-width: 350px;
 }
 
 @keyframes loading{

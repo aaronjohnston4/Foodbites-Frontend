@@ -31,6 +31,7 @@ const Show = () => {
     // conditionally render either a person's data or a loading message
 
     const loaded = () => (
+        <div className='recipe-list-wrapper'>
         <div className="recipe">
             {/* <h1>Show Page</h1> */}
             <h2>{recipe.name}</h2>
@@ -43,6 +44,7 @@ const Show = () => {
             </div>
             <div>
             <Link to={`/recipes/${id}/edit`}>Edit Recipe</Link>
+            </div>
             </div>
         </div>
     )
