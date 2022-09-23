@@ -1,6 +1,16 @@
 # PROJECT 3 **React Frontend**
 # FOODBITES
 
+## Deployed Frontend Site
+
+Netlify
+https://storied-faun-a27df0.netlify.app/
+
+## Deployed Backend Site
+
+Heroku
+https://project3-foodbites.herokuapp.com/recipes
+
 ## Description
 
 Reverse engineered a site similar to Budgetbytes. This is a good food friendly blog, made for the average foodie to not only gain more knowledge, but share their knowledge as well. The usere is able to post (create),  read, edit (update), and delete recipes.
