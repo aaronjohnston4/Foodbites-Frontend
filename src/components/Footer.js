@@ -9,10 +9,10 @@ const Footer = (props) => {
                 />
             </Link>
             <Link to="/">FOODBITES</Link>
-            <Link to="/post">FACEBOOK</Link>
-            <Link to="/post">INSTAGRAM</Link>
-            <Link to="/post">MYSPACE</Link>
-            <Link to="/post">TIKTOK</Link>
+            <Link to="/">FACEBOOK</Link>
+            <Link to="/">INSTAGRAM</Link>
+            <Link to="/">MYSPACE</Link>
+            <Link to="/">TIKTOK</Link>
         </nav>
     )
 }
