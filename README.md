@@ -1,10 +1,9 @@
 # PROJECT 3 **React Frontend**
 # FOODBITES
 
-## **Overview**
 ## Description
 
-Rerverse engineered a site similar to Budgetbytes. This is a good food friendly blog, made for the average foodie to not only gain more knowledge, but share their knowledge as well. The usere is able to post (create),  read, edit (update), and delete recipes.
+Reverse engineered a site similar to Budgetbytes. This is a good food friendly blog, made for the average foodie to not only gain more knowledge, but share their knowledge as well. The usere is able to post (create),  read, edit (update), and delete recipes.
 
 # Screen shots
 
@@ -18,3 +17,19 @@ Rerverse engineered a site similar to Budgetbytes. This is a good food friendly 
 Step 2. ERD
 
 <img width="400" alt="Edit Page" src="https://i.imgur.com/qP3LHJk.png">
+
+# Technologies Used:
+
+I built Foodbites by using React, Javascript, CSS, HTML and Netlify to build the frontend of site, while using MongoDB, Mongoose, nodemon, express and Heroku to run the backend to populate the site. 
+
+# Getting Started:
+
+On Foodbites you can click on whatever recipe looks good to you, where you can view the recipe. From the recipe show page, you can press the edit button where it sends you to an edit page, or you can push the delet button to delete the recipe. On the edit page you can edit the name, recipe and image of the recipe card. In the navigation, you can click the post link to go to the post page, and create a new recipe that will be placed in the database in MongoDB, where it will be shown on the home page in the list of recipes. 
+
+# Next Steps:
+
+CSS caused a lot of trouble, and some things weren't doing what I was needing them to do. I would like to have the ending outcome be more similar to the wire frame on the post show and edit pages.
+
+# Cites:
+
+Notion class material.
