@@ -18,6 +18,13 @@ Step 2. ERD
 
 <img width="400" alt="Edit Page" src="https://i.imgur.com/qP3LHJk.png">
 
+Step 3. Final shots
+
+<img width="400" alt="Home Page" src="https://i.imgur.com/GdsnBaF.jpg">
+<img width="400" alt="Create Page" src="https://i.imgur.com/pem3fpj.jpg">
+<img width="400" alt="Show Page" src="https://i.imgur.com/AEoQrX8.png">
+<img width="400" alt="Edit Page" src="https://i.imgur.com/6MgNtbf.jpg">
+
 # Technologies Used:
 
 I built Foodbites by using React, Javascript, CSS, HTML and Netlify to build the frontend of site, while using MongoDB, Mongoose, nodemon, express and Heroku to run the backend to populate the site. 
